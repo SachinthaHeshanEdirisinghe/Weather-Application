@@ -4,17 +4,15 @@
     align-items: center;
     padding: 10px 20px;
     border-bottom: 2px solid #dee2e6;
-    background-color: #202020;
-    margin: 3px;
+    background-color: #cfbdbd;
+    margin: 13px;
     border-radius: 10px;
 }
 .header:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s;
 }
-body {
-    background-color: #ffffff;
-}
+
 .left_side {
     display: flex;
     align-items: center;
@@ -49,7 +47,7 @@ body {
 }
 .main_img {
     text-align: center  ;
-    color: white;
+    color: #333;
 }
 
 .grid-container {
@@ -71,32 +69,57 @@ body {
     padding: 15px;
     margin: 15px;
     display: flex;
-    background-color: #000000;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    color: #333;
     border-radius: 10px;
 }
 .upper_left_side_down{
-    background-color: #000000;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    color: #333;
     border-radius: 10px;
     padding: 15px;
     margin: 15px;
     display: flex;
 }
+
+
+/* Style the video element itself */
+#myVideo {
+  /* Position the video absolutely within the container */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* Move the video back by half its width/height to center it */
+  transform: translate(-50%, -50%); 
+  
+  /* Ensure the video covers the entire container while maintaining aspect ratio */
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  
+  /* Optional: Ensure the video is behind the content */
+  z-index: -100;
+}
 .lower_section{
     margin-top: 20px;
-    background-color: #202020;
     border-radius: 10px;
     margin:15px;
     padding: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 .main{
-    background-color: #1d1c1c;
     padding: 5px;
-    margin: 3px;
+    margin: 13px;
     border-radius: 10px;
+    
 }
 .main_card{
     border-radius: 10px;
-    color: #ffffff;
+    backdrop-filter: blur(10px);
+    color: #333;
     padding: 20px;
 }   
 .details{
@@ -104,37 +127,53 @@ body {
     align-content: center;
     border-radius: 10px;
     width: 100%;
-    background-color: #000000;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    color: #333;
     border-radius: 10px;
-    color: white;
 }
 .details:hover{
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
     transform: scale(1.02);
     transition: transform 0.4s;
 }
 .upper_left_side_up:hover{
     transform: scale(1.02);
     transition: transform 0.4s;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
 }
 .upper_left_side_down:hover{
     transform: scale(1.02);
     transition: transform 0.4s;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
 }
 .card{
-    background-color: #000000;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    color: #333;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width:20%;
     margin:15px;
-    color: white;
+    
 }  
+.upper_section{
+    position: relative; 
+    width: 100%;
+    height: 100vh; /* Set height to the full viewport height */
+    overflow: hidden; /* Hide any overflow if the video is slightly larger */
+}
 .card:hover{
     transform: scale(1.1);
     transition: transform 0.4s;
 }
+
 .upper_section:hover{
-    
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s;
 }
 .lower_section:hover{
